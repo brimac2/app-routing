@@ -1,0 +1,10 @@
+<h3>User list:</h3>
+<ul>
+  <ng-container *ngFor="let item of items">
+    <li *ngIf="item.first_name">
+      <button (click)="addUserEmail(item.email)">More info</button
+      >{{ item.first_name }}
+    </li> </ng-container
+  >
+</ul>
+<button>Add new client</button>

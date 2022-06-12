@@ -1,0 +1,3 @@
+<app-user-details [items]="users" (addEmail)="addUserEmail($event)">
+</app-user-details>
+<app-user-email *ngIf="emails.length > 0" [emails]="emails"> </app-user-email>
